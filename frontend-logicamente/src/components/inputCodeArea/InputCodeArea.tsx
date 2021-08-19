@@ -5,13 +5,25 @@ import { Container } from './styles';
 
 const InputCodeArea: React.FC = () => {
 
-  const sugestionCodes : string[] = []
+  const sugestionCodes : string[] = [
+    'Programa {',
+    'inicio {',
+    'repetir(5)',
+    'Programa {',
+    'inicio {',
+    'inicio {',
+  ]
 
   return (
     <Container>
       <h4>Input</h4>
-      <div className="dropzone"></div>
-      <Button variant="success">Enviar</Button>
+      <ul className="dropzone">
+        {
+          sugestionCodes.map(sugestion => {
+            return <li key={sugestion} className='sugestion' draggable>{sugestion}</li>
+          })
+        }
+      </ul>
     </Container>
   );
 }

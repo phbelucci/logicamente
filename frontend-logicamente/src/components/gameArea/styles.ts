@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import back from '../../assets/screenMockup.png';
+import background from '../../assets/screenMockup.png';
 
 export const Container = styled.div`
     
@@ -13,7 +13,7 @@ export const Container = styled.div`
     border-radius: 5px;
 
     img {
-        background-image: url("${back}");
+        background-image: url("${background}");
         max-width: 100%;
         min-width: 100%;
         max-height: 100%;

@@ -4,15 +4,16 @@ export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 
     * {
-        margin: 0px;
-        padding: 0px;
-        outline: 0px;
+        margin: 0;
+        padding: 0;
+        outline: 0;
         box-sizing: border-box;
         flex: 1;
     }
 
     html, body, #root {
-        height: 100%;
+      height: 100%;
+      max-height: 100%;
     }
 
     body {

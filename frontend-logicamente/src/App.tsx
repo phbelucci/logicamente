@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Switch>
               <Route path="/" exact={true} component={Login} />
-              <Route path="/game" component={GamePage} />
+              <Route path="/home" component={GamePage} />
               <Route path="/cadastro" component={Cadastro} />
               <Route path="/ranking" component={Ranking} />
           </Switch>

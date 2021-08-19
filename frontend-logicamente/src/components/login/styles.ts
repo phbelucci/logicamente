@@ -14,9 +14,9 @@ export const Container = styled.div`
         form {
             width: 394px;
             input {
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
+                border: 0;
+                margin: 0;
+                padding: 0;
                 width: 394px;
             };
         }
