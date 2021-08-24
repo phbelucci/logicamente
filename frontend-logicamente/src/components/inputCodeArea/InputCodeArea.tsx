@@ -19,8 +19,8 @@ const InputCodeArea: React.FC = () => {
       <h4>Input</h4>
       <ul className="dropzone">
         {
-          sugestionCodes.map(sugestion => {
-            return <li key={sugestion} className='sugestion' draggable>{sugestion}</li>
+          sugestionCodes.map((sugestion, index) => {
+            return <li key={index} className='sugestion' draggable>{sugestion}</li>
           })
         }
       </ul>

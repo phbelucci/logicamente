@@ -1,18 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { GameService } from './game.service';
 
-@Controller("/game")
+@Controller('/game')
 export class GameController {
   constructor(private readonly gameService: GameService) {}
 
-  @Get("/")
-  getHello(): string {
-    return this.gameService.getHello();
+  @Get('/scrambled-code')
+  async getScrambledCode(@Query('stage') stage: string): Promise<string[]> {
+    return await this.gameService.getScrambledCode(stage);
   }
-
-  @Get("/ok")
-  getOk(): string {
-    return this.gameService.getOk();
-  }
-  
 }

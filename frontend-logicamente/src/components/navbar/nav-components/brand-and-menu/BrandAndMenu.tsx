@@ -16,9 +16,9 @@ const BrandAndMenu: React.FC = () => {
       <h4>Logicamente</h4>
       <div>
         {
-          menuOptions.map(option => {
+          menuOptions.map((option, index) => {
             const optionLower = `/${option.toLowerCase()}`
-            return <Link to={optionLower}>{option}</Link>
+            return <Link key={index} to={optionLower}>{option}</Link>
           })
         }
       </div>

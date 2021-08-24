@@ -13,10 +13,10 @@ const ActionsGameArea: React.FC = () => {
 
   return (
     <Container>
-      {buttonsText.map(buttonText => {
-        if(buttonText === "Executar") return <Button variant="success">{buttonText}</Button>
-        if(buttonText === 'Limpar') return <Button variant="danger">{buttonText}</Button>
-        return <Button variant="info">{buttonText}</Button>
+      {buttonsText.map((buttonText, index) => {
+        if(buttonText === "Executar") return <Button key={index} variant="success">{buttonText}</Button>
+        if(buttonText === 'Limpar') return <Button key={index} variant="danger">{buttonText}</Button>
+        return <Button key={index} variant="info">{buttonText}</Button>
       })}
     </Container>
   );
